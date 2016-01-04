@@ -8,4 +8,4 @@ and needs help or wants to compare their answer to someone elses.
 All of these were done by me, Michael Sosnowski. You can get in contact with me through my website at
 http://www.michaelsosnowski.info
 
-In the next 90 days, all programming challenge problems from Chapter 6 to the end of the book should be added. 
+In the next 90 days, most of the programming challenge problems from Chapter 6 to the end of the book should be added. 
