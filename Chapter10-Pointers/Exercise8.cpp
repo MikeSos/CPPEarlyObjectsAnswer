@@ -1,7 +1,5 @@
 
-// To solve this book problem you need to watch the VideoNote, "Solvng the Days in Current Month Problem"
-// or you can use your google skills to read some documentation on the ctime library or get an answer
-// from someplace like stack overflow. Check out www.cplusplus.com
+// Look at section 10.14 to start to understand how time system works
 
 #include <iostream>
 #include <string>
