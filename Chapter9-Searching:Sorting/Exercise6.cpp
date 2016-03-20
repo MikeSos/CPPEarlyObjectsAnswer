@@ -38,7 +38,7 @@ void stringSelectionSort(std::string theArray[], int size) {
 	int startScan, minIndex;
 	char Value;
 	std::string holdValue;
-	bool flag = false;
+	bool found = false;
 
 	// Goes through the array 
 	for (startScan = 0; startScan < (size - 1); startScan++) {
@@ -51,17 +51,25 @@ void stringSelectionSort(std::string theArray[], int size) {
 
 		// Go through index, starting at position to right of scan
 		for (int index = startScan + 1; index < size; index++) {
-			if (theArray[index][0] < Value) {
 
-				Value = theArray[index][0];
-				holdValue = theArray[index];
-				minIndex = index;
+			// Test current position to see if it is of lower value and that it isn't equal to the value.
+			if (theArray[index][0] < Value && theArray[index][0] != Value) {
+
+				Value = theArray[index][0];		// Change value to the new position
+				holdValue = theArray[index];  	// Set holdValue string to the current position
+				minIndex = index;				// Change minIndex
+				found = true;					// Switch found to true
 
 			}
 		}
 
-		theArray[minIndex] = theArray[startScan];
-		theArray[startScan] = holdValue;
+		// A position needs to be changed.
+		if (found == true) {
+			theArray[minIndex] = theArray[startScan];		// Set the new minIndex position to the position that was searched
+			theArray[startScan] = holdValue;				// The new position to search for is the startScan location
+			found = false;									// Set found back to false.
+		}
+
 	}
 
 }
