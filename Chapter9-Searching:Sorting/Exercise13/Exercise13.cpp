@@ -4,7 +4,7 @@
 #include <iostream>
 #include <fstream>
 #include <string>
-using namespace std;
+using namespace std; // Using namespace std in this exercise.
 
 void stringSelectionSort(string [], int); 
 
