@@ -26,7 +26,7 @@ PROGS = ${PROG1}
 
 #Type make will call the default and make this
 default:
-	${CXX} ${SRCS} ${HEADERS} -o ${PROG1}
+	${CXX} ${CXXFLAGS} ${SRCS} ${HEADERS} -o ${PROG1}
 
 # typing make all calls this build
 all:

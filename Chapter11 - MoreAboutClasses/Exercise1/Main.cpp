@@ -10,7 +10,7 @@ int main() {
 
 	
 	std::cout << "Note: A number like 34 will just print out like three four instead of thirty four." << std::endl;
-	sleep(2);
+
 
 	int userNumber;
 
